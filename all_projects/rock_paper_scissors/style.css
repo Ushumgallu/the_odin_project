@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start of css */
+
+body::after {
+	content: '';
+	background: url(https://img1.wsimg.com/isteam/ip/4f659436-1b06-493e-a709-bdf4c4be19a2/Rock%20Paper%20Scissors.jpg);
+	background-size: 100% 130%;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+h1 {
+	color: rgb(31, 89, 107);
+	background-color: rgb(165, 168, 177);
+	font-size: 48px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.p {
+	color: rgb(31, 89, 107);
+	background-color: rgb(165, 168, 177);
+	font-size: 32px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+h1, .p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.replay {
+	color: gray;
+	font-weight: bolder;
+	border: 2px solid rgb(49, 8, 8);
+	border-radius: 5%;
+	margin-bottom: 150px;
+}
+
+.replay:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.replay:hover {
+	border-color: rgb(92, 15, 15);
+}
+
+.scoreboard {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 570px;
+}
+
+.board1 {
+	color: rgb(24, 99, 24);
+	border: 0.3rem solid rgb(24, 99, 24);
+	border-radius: 5px;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	font-size: 36px;
+	font-weight: bold;
+	padding: 30px 30px;
+	text-align: center;
+}
+
+.yourscore-number, .opponentscore-number {
+	margin: 1rem;
+	padding: .2rem .2rem;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+}
+
+.board2 {
+	color: rgb(78, 9, 9);
+	border: 0.3rem solid rgb(78, 9, 9);
+	border-radius: 5px;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	font-size: 36px;
+	font-weight: bold;
+	padding: 30px 30px;
+	text-align: center;
+}
+
+.options {
+	display: flex;
+	justify-content: space-between;
+	padding: 5rem 39rem;
+	padding-top: 10rem;
+}
+
+.choice {
+	color: rgb(238, 229, 240);
+	background-color: rgb(63, 56, 56);
+	font-size: 36px;
+	font-weight: bold;
+	border: 0.3rem solid rgb(139, 139, 139);
+	border-radius: 10px;
+}
+
+.choice:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.choice:hover {
+	border-color: purple;
+}
+
+.results {
+	color: lightseagreen;
+	background-color: rgb(199, 203, 218);
+	border: 0.2rem solid black;
+	border-radius: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	padding: 20px 50px;
+	margin-top: 80px;
+	margin-left: 400px;
+	margin-right: 400px;
+}
